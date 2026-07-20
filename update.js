@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   "use strict";
 
   if (window.__RAKIB_LICENSE_LOADER_RUNNING__) return;
@@ -186,7 +186,7 @@
 
       try {
         const response = await fetch(
-          baseUrl + (config.licenseFile || "licenses.json") + "?t=" + Date.now(),
+          "https://raw.githubusercontent.com/raiyanrakib2006-code/rakib-license/main/licenses.json?t=" + Date.now(),
           { cache: "no-store" }
         );
 
