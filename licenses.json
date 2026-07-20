@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "licenses": [
+    {
+      "id": "first-license",
+      "sha256": "c2711a97275191ec42b5b8860488034925631a82bf010d1aca1e3023e1604720",
+      "active": true,
+      "expires": "2027-12-31T23:59:59Z"
+    }
+  ]
+}
