@@ -1,17 +1,23 @@
-﻿{
-    "version":  1,
-    "licenses":  [
-                     {
-                         "id":  "first-license",
-                         "sha256":  "c2711a97275191ec42b5b8860488034925631a82bf010d1aca1e3023e1604720",
-                         "active":  true,
-                         "expires":  "2027-12-31T23:59:59Z"
-                     },
-                     {
-                         "id":  "Rakib",
-                         "sha256":  "98fe3ecbeac1d39d897fc48e8208d1bf3efa66df8feeadc622def38992510601",
-                         "active":  true,
-                         "expires":  "2027-07-20T04:04:56Z"
-                     }
-                 ]
+{
+  "version": 1,
+  "licenses": [
+    {
+      "id": "first-license",
+      "sha256": "c2711a97275191ec42b5b8860488034925631a82bf010d1aca1e3023e1604720",
+      "active": true,
+      "expires": "2027-12-31T23:59:59Z"
+    },
+    {
+      "id": "Rakib",
+      "sha256": "98fe3ecbeac1d39d897fc48e8208d1bf3efa66df8feeadc622def38992510601",
+      "active": true,
+      "expires": "2027-07-20T04:04:56Z"
+    },
+    {
+      "id": "customer-01",
+      "sha256": "4fc4c2a6d49e5a6aa13eadfc5e142cf0b378e34015bef0746ce30be422be1e01",
+      "active": true,
+      "expires": "2027-07-20T04:56:32.021Z"
+    }
+  ]
 }
