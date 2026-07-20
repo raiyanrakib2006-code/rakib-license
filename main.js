@@ -1,8 +1,8 @@
-(function () {
+﻿(function () {
   "use strict";
 
   const cfg = window.RAKIB_LICENSE_CONFIG || {};
-  const DISPLAY_TEXT = cfg.displayText || "Rakib (Demo)";
+  const DISPLAY_TEXT = cfg.displayText || "Live";
   const GREEN = "#00C853";
   const ICON_HREF = "/profile/images/spritemap.svg#icon-profile-level-standart";
 
@@ -71,3 +71,4 @@
     observer.disconnect();
   }, 120000);
 })();
+
