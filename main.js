@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   "use strict";
 
   const cfg = window.RAKIB_LICENSE_CONFIG || {};
@@ -45,8 +45,8 @@
       svg.style.minWidth = "14px";
       svg.style.minHeight = "14px";
       svg.style.color = GREEN;
-      svg.style.fill = GREEN;
-      svg.style.stroke = GREEN;
+      
+      
     });
   }
 
