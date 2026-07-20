@@ -73,3 +73,44 @@
 })();
 
 
+
+
+/* __RAHAT_CUSTOM_PLANE_ICON__ */
+(function(){
+  const CUSTOM_PLANE = `
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     width="14"
+     height="14"
+     aria-hidden="true"
+     style="width:14px;height:14px;min-width:14px;min-height:14px;display:inline-block;vertical-align:middle;color:#00C853;fill:currentColor;">
+  <path fill-rule="evenodd" d="M2.35 10.8 21.2 3.25c.48-.19.96.27.8.77l-6.06 16.6c-.17.46-.78.58-1.11.22l-4.36-4.76-2.68 1.9c-.43.3-1.03-.07-.95-.59l.55-3.53-4.78-1.57c-.61-.2-.64-1.04-.06-1.27Zm4.08-.11 3.25 1.08 6.56-4.7-5.35 6.18 3.53 3.86 4.2-11.51-12.19 4.09Z"/>
+</svg>`;
+
+  function replacePlaneIcons(){
+    document.querySelectorAll('svg.icon-academic, svg.icon-profile-level-standart, svg[class*="icon-profile-level-standart"]').forEach(function(svg){
+      if (svg.dataset.rahatPlaneDone === '1') return;
+
+      const wrap = document.createElement('span');
+      wrap.className = 'rahat-plane-icon-wrap';
+      wrap.style.display = 'inline-flex';
+      wrap.style.alignItems = 'center';
+      wrap.style.justifyContent = 'center';
+      wrap.style.width = '14px';
+      wrap.style.height = '14px';
+      wrap.style.minWidth = '14px';
+      wrap.style.minHeight = '14px';
+      wrap.innerHTML = CUSTOM_PLANE;
+
+      svg.dataset.rahatPlaneDone = '1';
+      svg.replaceWith(wrap);
+    });
+  }
+
+  replacePlaneIcons();
+
+  const timer = setInterval(replacePlaneIcons, 1200);
+  setTimeout(function(){
+    clearInterval(timer);
+  }, 30000);
+})();
