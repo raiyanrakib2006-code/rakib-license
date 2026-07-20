@@ -18,6 +18,12 @@
       "sha256": "4fc4c2a6d49e5a6aa13eadfc5e142cf0b378e34015bef0746ce30be422be1e01",
       "active": true,
       "expires": "2027-07-20T04:56:32.021Z"
+    },
+    {
+      "id": "customer-02",
+      "sha256": "d29d236be2ba23249550546ab91755ba6c0077e14864587cfbfe17d9c3b22b43",
+      "active": true,
+      "expires": "2027-07-20T04:59:46.945Z"
     }
   ]
 }
