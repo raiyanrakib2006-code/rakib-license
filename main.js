@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const LABEL = "Live";
+  const LABEL = "Live (Demo)";
   const GREEN = "#00C853";
   const HREF = "/profile/images/spritemap.svg#icon-profile-level-standart";
 
