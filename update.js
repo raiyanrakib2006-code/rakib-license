@@ -7,7 +7,7 @@
   const OWNER = "raiyanrakib2006-code";
   const REPO = "rakib-license";
   const BRANCH = "main";
-  const LOGIN_TITLE = "Rahat License Login";
+  const LOGIN_TITLE = "Live License Login";
 
   const currentScript = document.currentScript;
 
@@ -68,7 +68,7 @@
 
   overlay.innerHTML = `
     <div class="r-card" role="dialog" aria-modal="true">
-      <button class="r-close" type="button" aria-label="Close">×</button>
+      <button class="r-close" type="button" aria-label="Close">Ã—</button>
       <div class="r-badge">LICENSE REQUIRED</div>
       <h2>${LOGIN_TITLE}</h2>
       <p>Enter the complete RAKIB- license key.</p>
