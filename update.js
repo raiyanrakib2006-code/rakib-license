@@ -7,7 +7,7 @@
   const OWNER = "raiyanrakib2006-code";
   const REPO = "rakib-license";
   const BRANCH = "main";
-  const LOGIN_TITLE = "Live License Login";
+  const LOGIN_TITLE = "Rafin License Login";
 
   const currentScript = document.currentScript;
 
