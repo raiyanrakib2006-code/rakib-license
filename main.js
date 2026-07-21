@@ -1,6 +1,78 @@
-(function(){
+(function () {
   "use strict";
-  const LABEL="Rakib (Demo)",GREEN="#00C853",HREF="/profile/images/spritemap.svg#icon-profile-level-standart";
-  function apply(root){const scope=root&&root.querySelectorAll?root:document;scope.querySelectorAll("*").forEach(el=>{if(el.children.length===0&&el.textContent.trim()==="Demo"){el.textContent=LABEL;el.style.color=GREEN;el.style.fontWeight="700";el.style.fontSize="10px";el.style.lineHeight="10px"}});scope.querySelectorAll("svg.icon-academic").forEach(svg=>{try{svg.className.baseVal="icon-profile-level-standart"}catch(e){svg.setAttribute("class","icon-profile-level-standart")}const use=svg.querySelector("use");if(use){use.setAttribute("href",HREF);use.setAttributeNS("http://www.w3.org/1999/xlink","xlink:href",HREF)}svg.style.width="14px";svg.style.height="14px";svg.style.minWidth="14px";svg.style.minHeight="14px";svg.style.color=GREEN;svg.style.removeProperty("fill");svg.style.removeProperty("stroke")})}
-  apply(document);let timer;const observer=new MutationObserver(m=>{clearTimeout(timer);timer=setTimeout(()=>{m.forEach(x=>x.addedNodes.forEach(n=>{if(n.nodeType===Node.ELEMENT_NODE)apply(n)}));apply(document)},50)});observer.observe(document.documentElement,{childList:true,subtree:true});setTimeout(()=>observer.disconnect(),120000);
+
+  const LABEL = "Live";
+  const GREEN = "#00C853";
+  const HREF = "/profile/images/spritemap.svg#icon-profile-level-standart";
+
+  function apply(root) {
+    const scope = root && root.querySelectorAll ? root : document;
+
+    scope.querySelectorAll("*").forEach(function (element) {
+      if (
+        element.children.length === 0 &&
+        element.textContent.trim() === "Demo"
+      ) {
+        element.textContent = LABEL;
+        element.style.color = GREEN;
+        element.style.fontWeight = "700";
+        element.style.fontSize = "10px";
+        element.style.lineHeight = "10px";
+      }
+    });
+
+    scope.querySelectorAll("svg.icon-academic").forEach(function (svg) {
+      try {
+        svg.className.baseVal = "icon-profile-level-standart";
+      } catch (error) {
+        svg.setAttribute("class", "icon-profile-level-standart");
+      }
+
+      const use = svg.querySelector("use");
+
+      if (use) {
+        use.setAttribute("href", HREF);
+        use.setAttributeNS(
+          "http://www.w3.org/1999/xlink",
+          "xlink:href",
+          HREF
+        );
+      }
+
+      svg.style.width = "14px";
+      svg.style.height = "14px";
+      svg.style.minWidth = "14px";
+      svg.style.minHeight = "14px";
+      svg.style.color = GREEN;
+      svg.style.removeProperty("fill");
+      svg.style.removeProperty("stroke");
+    });
+  }
+
+  apply(document);
+
+  let timer;
+
+  const observer = new MutationObserver(function (mutations) {
+    clearTimeout(timer);
+
+    timer = setTimeout(function () {
+      mutations.forEach(function (mutation) {
+        mutation.addedNodes.forEach(function (node) {
+          if (node.nodeType === Node.ELEMENT_NODE) apply(node);
+        });
+      });
+
+      apply(document);
+    }, 50);
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+
+  setTimeout(function () {
+    observer.disconnect();
+  }, 120000);
 })();
