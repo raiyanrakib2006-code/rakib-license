@@ -1,41 +1,47 @@
-{
-  "version": 1,
-  "licenses": [
-    {
-      "id": "first-license",
-      "sha256": "c2711a97275191ec42b5b8860488034925631a82bf010d1aca1e3023e1604720",
-      "active": true,
-      "expires": "2027-12-31T23:59:59Z"
-    },
-    {
-      "id": "Rakib",
-      "sha256": "98fe3ecbeac1d39d897fc48e8208d1bf3efa66df8feeadc622def38992510601",
-      "active": true,
-      "expires": "2027-07-20T04:04:56Z"
-    },
-    {
-      "id": "customer-01",
-      "sha256": "4fc4c2a6d49e5a6aa13eadfc5e142cf0b378e34015bef0746ce30be422be1e01",
-      "active": true,
-      "expires": "2027-07-20T04:56:32.021Z"
-    },
-    {
-      "id": "customer-02",
-      "sha256": "d29d236be2ba23249550546ab91755ba6c0077e14864587cfbfe17d9c3b22b43",
-      "active": true,
-      "expires": "2027-07-20T04:59:46.945Z"
-    },
-    {
-      "id": "customer-03",
-      "sha256": "2ed69eb8edc1a55230fdcf99ed7efcd090b0c68d63138cecb54696d42454cfd8",
-      "active": false,
-      "expires": "2027-07-20T05:31:40.289Z"
-    },
-    {
-      "id": "customer-04",
-      "sha256": "f13d05d46124f78968f8b0b66a4a093fcaac7614982b9e2f4ddd12526c943ce5",
-      "active": true,
-      "expires": "2027-07-20T05:43:52.870Z"
-    }
-  ]
+﻿{
+    "version":  1,
+    "licenses":  [
+                     {
+                         "id":  "first-license",
+                         "sha256":  "c2711a97275191ec42b5b8860488034925631a82bf010d1aca1e3023e1604720",
+                         "active":  true,
+                         "expires":  "2027-12-31T23:59:59Z"
+                     },
+                     {
+                         "id":  "Rakib",
+                         "sha256":  "98fe3ecbeac1d39d897fc48e8208d1bf3efa66df8feeadc622def38992510601",
+                         "active":  true,
+                         "expires":  "2027-07-20T04:04:56Z"
+                     },
+                     {
+                         "id":  "customer-01",
+                         "sha256":  "4fc4c2a6d49e5a6aa13eadfc5e142cf0b378e34015bef0746ce30be422be1e01",
+                         "active":  true,
+                         "expires":  "2027-07-20T04:56:32.021Z"
+                     },
+                     {
+                         "id":  "customer-02",
+                         "sha256":  "d29d236be2ba23249550546ab91755ba6c0077e14864587cfbfe17d9c3b22b43",
+                         "active":  true,
+                         "expires":  "2027-07-20T04:59:46.945Z"
+                     },
+                     {
+                         "id":  "customer-03",
+                         "sha256":  "2ed69eb8edc1a55230fdcf99ed7efcd090b0c68d63138cecb54696d42454cfd8",
+                         "active":  false,
+                         "expires":  "2027-07-20T05:31:40.289Z"
+                     },
+                     {
+                         "id":  "customer-04",
+                         "sha256":  "f13d05d46124f78968f8b0b66a4a093fcaac7614982b9e2f4ddd12526c943ce5",
+                         "active":  true,
+                         "expires":  "2027-07-20T05:43:52.870Z"
+                     },
+                     {
+                         "id":  "Rakib-5Day-01",
+                         "sha256":  "87a81bb4b02d6101b7488f28e6b901b1bbbfcd4d03aa73f11e51c9959811aa17",
+                         "active":  true,
+                         "expires":  "2026-07-23T02:17:14Z"
+                     }
+                 ]
 }
