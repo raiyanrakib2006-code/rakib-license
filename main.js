@@ -1,12 +1,16 @@
 (function () {
   "use strict";
 
-  const LABEL = "Live (Demo)";
+  const LABEL = "Rahat (Demo)";
   const GREEN = "#00C853";
-  const HREF = "/profile/images/spritemap.svg#icon-profile-level-standart";
+  const HREF =
+    "/profile/images/spritemap.svg#icon-profile-level-standart";
 
   function apply(root) {
-    const scope = root && root.querySelectorAll ? root : document;
+    const scope =
+      root && typeof root.querySelectorAll === "function"
+        ? root
+        : document;
 
     scope.querySelectorAll("*").forEach(function (element) {
       if (
@@ -24,7 +28,8 @@
     scope.querySelectorAll("svg.icon-academic").forEach(function (svg) {
       try {
         svg.className.baseVal = "icon-profile-level-standart";
-      } catch (error) {
+      }
+      catch (error) {
         svg.setAttribute("class", "icon-profile-level-standart");
       }
 
@@ -59,7 +64,9 @@
     timer = setTimeout(function () {
       mutations.forEach(function (mutation) {
         mutation.addedNodes.forEach(function (node) {
-          if (node.nodeType === Node.ELEMENT_NODE) apply(node);
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            apply(node);
+          }
         });
       });
 
