@@ -59,7 +59,7 @@
   overlay.id = "__rakib_license_overlay__";
   overlay.innerHTML = `
     <div class="rakib-license-card" role="dialog" aria-modal="true">
-      <button class="rakib-close" type="button" aria-label="Close">×</button>
+      <button class="rakib-close" type="button" aria-label="Close">Ã—</button>
       <div class="rakib-badge">LICENSE REQUIRED</div>
       <h2>Live License Login</h2>
       <p>Enter the complete RAKIB- license key.</p>
