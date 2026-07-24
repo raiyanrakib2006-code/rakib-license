@@ -48,6 +48,12 @@
                          "sha256":  "ec4ca1ec1a3847de069c97a555dd1921bc64b0c17adc274b2048178e23e5b4ea",
                          "active":  true,
                          "expires":  "2026-07-26T10:01:05Z"
+                     },
+                     {
+                         "id":  "Nafisa-004",
+                         "sha256":  "2723d4210c08b48524d1b662b1ff19e269d93e4a5213450110c84e717025809a",
+                         "active":  true,
+                         "expires":  "2026-08-23T10:06:32Z"
                      }
                  ]
 }
