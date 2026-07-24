@@ -42,6 +42,12 @@
                          "sha256":  "87a81bb4b02d6101b7488f28e6b901b1bbbfcd4d03aa73f11e51c9959811aa17",
                          "active":  true,
                          "expires":  "2026-07-23T02:17:14Z"
+                     },
+                     {
+                         "id":  "Rafin-001",
+                         "sha256":  "ec4ca1ec1a3847de069c97a555dd1921bc64b0c17adc274b2048178e23e5b4ea",
+                         "active":  true,
+                         "expires":  "2026-07-26T10:01:05Z"
                      }
                  ]
 }
